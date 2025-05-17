@@ -1,5 +1,5 @@
-title: tonic-starter
-description: ""
+title: jekyll-space
+description: "The theme that is out of this world!"
 encoding: utf-8
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
