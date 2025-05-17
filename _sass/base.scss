@@ -1,13 +1,52 @@
+@font-face {
+  font-family: 'Sterion';
+  /* Choose a unique name for your font family */
+  src: url('/assets/Sterion.ttf') format('truetype');
+  /* Path to your TTF file */
+}
+
 body {
-  background-color: #0b0921;
+  background: radial-gradient(circle, rgb(6, 71, 101) 0%, rgba(5, 20, 54, 1) 99%);
   font-family: sans-serif;
-  margin: auto;
-  max-width: 70ch;
   color: #d2c4c4;
 }
 
+.content {
+  text-align: center;
+}
+
 .stars {
-    height: 100vh;
-    background-image: url('/assets/stars.png');
-    background-repeat: repeat; background-size: 1900px 1900px;
+  z-index: 3;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/assets/stars.png');
+  background-repeat: repeat;
+  background-size: 500px 500px;
+  /* Only scale width, keep height auto */
+}
+
+h1 {
+  font-family: 'Sterion', sans-serif;
+  font-size: 3rem;
+  
+}
+
+h1 {
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+}  
+
+/* Animation */
+h1 {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
 }
