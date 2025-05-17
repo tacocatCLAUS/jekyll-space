@@ -12,7 +12,10 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/assets/stars.png');
-    background-repeat: repeat;
-    background-size: 900px 900px;
+    background-image:
+        url('/assets/stars.png'),
+        url('/assets/stars.png');
+    background-repeat: repeat, repeat;
+    background-size: 900px 900px, 900px 900px;
+    background-position: 0 0, 50px 50px;
 }
